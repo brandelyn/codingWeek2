@@ -21,34 +21,45 @@ public class Week2Homework {
 		
 		double costOfMilk = 2.75;
 		double moneyInWallet = 54.67;
-		int thirstLevel = 6;
+		int thirstLevel = 2;
 		
 		boolean shouldBuyIcecream = isHotOutside && hasMoneyInPocket;
 		boolean willGoSwimming = isHotOutside && !isWeekDay;
 		boolean isAGoodDay = isHotOutside && hasMoneyInPocket && !isWeekDay;
 		boolean willBuyMilk = isHotOutside && thirstLevel >= 3 && moneyInWallet >= (2 * costOfMilk);
 		
+		System.out.println(shouldBuyIcecream);
+		System.out.println(willGoSwimming);
+		System.out.println(isAGoodDay);
+		System.out.println(willBuyMilk);
+		
 		
 		if (isHotOutside && hasMoneyInPocket) {
 			System.out.println("I should buy ice cream!");
+		}else {
+			System.out.println("I should not buy ice cream.");
 			
 		}
 		
 		if (isHotOutside && !isWeekDay) {
 			System.out.println("I will go swimming!");
+		}else {
+			System.out.println("I will not go swimming.");
 		}
+		
+		
 		if (isHotOutside && hasMoneyInPocket && !isWeekDay) {
 			System.out.println("Today is a good day!");
+		}else {
+			System.out.println("Today is not a good day.");
 			
 		}
+		
+		
 		if (isHotOutside && thirstLevel >= 3 && moneyInWallet >= (2 * costOfMilk)) {
 			System.out.println("I will buy milk.");
-		
-				System.out.println(shouldBuyIcecream);
-				System.out.println(willGoSwimming);
-				System.out.println(isAGoodDay);
-				System.out.println(willBuyMilk);
-
+		}else {
+			System.out.println("I will not buy any milk.");
 	}
 	}
 
